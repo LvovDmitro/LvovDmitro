@@ -1,5 +1,5 @@
 # Hi there, I'm [Dmitry](https://vk.com/vozdemon99)
-### An applied mathematics student, starting to understand DL
+### An applied mathematics student, epic DL learner
 <!--
 **LvovDmitro/LvovDmitro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
