@@ -1,4 +1,4 @@
-# Hi there, I'm [Dmitry](https://vk.com/vozdemon99) ![]\
+# Hi there, I'm [Dmitry](https://vk.com/vozdemon99)
 ### An applied mathematics student, starting to understand DL
 <!--
 **LvovDmitro/LvovDmitro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
