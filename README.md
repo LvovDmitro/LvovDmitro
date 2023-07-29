@@ -1,6 +1,5 @@
 #Hey! What's up? I'm [Dmitry](https://vk.com/vozdemon99) ![](https://github.com/blackcater/blackcater/raw/main/images/Hi.gif) 
-### Applied mathematics student, starting to understand DL 🇷🇺
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Computer+science+student)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=Applied+mathematics+student,+starting+to+understand+DL)](https://git.io/typing-svg)
 <!--
 **LvovDmitro/LvovDmitro** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
