@@ -15,7 +15,7 @@
 [![CSS](https://img.shields.io/badge/Skill-CSS-informational?style=flat&logo=Css3&logoColor=white&color=6aa6f8)](https://www.w3.org/Style/CSS/)
 [![pgAdmin4](https://img.shields.io/badge/Skill-pgAdmin4-informational?style=flat&logo=pgAdmin4&logoColor=white&color=6aa6f8)](https://www.pgadmin.org/)
 
-## 📫 Contacts:
+#### 📫 Contacts:
 [![Telegram](https://img.shields.io/badge/Telegram-informational?style=flat&logo=telegram&logoColor=white&color=blue)](https://t.me/dimitriy_lvov)
 [![Gmail](https://img.shields.io/badge/-Mail-D14836?style=flat&logo=gmail&logoColor=white&color=blue)](mailto:voz-demon.ru@mail.ru)
 
