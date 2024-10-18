@@ -1,7 +1,7 @@
 # Hey! What's up? I'm [Dmitry](https://vk.com/vozdemon99) 🐲
-### An applied mathematics student, DL/ML learner
+### A Big Data and Machine Learning student
 #### ⌛ Current projects:
-🍎 🍏 X-Ray tasks with CLIP models.
+🍎 🍏 X-Ray tasks with Transformers.
 #### 💻 Learning:
 ##### DL and ML \ Statics and probabilities \ Algebra and analysis
 #### 😎 Skills
