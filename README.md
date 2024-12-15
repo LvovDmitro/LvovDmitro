@@ -1,7 +1,7 @@
 # Hey! What's up? I'm [Dmitry](https://vk.com/vozdemon99) 🐲
 ### A Big Data and Machine Learning student
 #### ⌛ Current projects:
-🍎 🍏 X-Ray tasks with Transformers.
+🍎 🍏 Gaze prediction heatmaps
 #### 💻 Learning:
 ##### DL and ML \ Statics and probabilities \ Algebra and analysis
 #### 😎 Skills
