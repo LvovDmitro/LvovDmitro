@@ -1,4 +1,8 @@
-I'm a researcher at [Med AI Lab, Innopolis University](https://ilya-pershin.com/lab/). I develop models for medical imaging and human attention, and study how data and evaluation choices change clinical predictions. I also help students design experiments and check their code and results.
+# AI researcher & ML engineer
+
+I build models for medical imaging and human attention at [Med AI Lab, Innopolis University](https://ilya-pershin.com/lab/). I also study how data representation and evaluation choices affect clinical risk assessment.
+
+**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026](https://openreview.net/forum?id=GHvYdC6tmg) (accepted poster) · [IEEE Access 2026](https://doi.org/10.1109/ACCESS.2026.3655813)
 
 [![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0F766E?style=flat-square)](mailto:d.lvov@innopolis.ru)
 
@@ -87,6 +91,8 @@ Storytelling, combat rules and world state have to agree during a Dungeons & Dra
 ## Tools
 
 ![Python](https://img.shields.io/badge/Python-334155?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-334155?style=flat-square&logo=pytorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-334155?style=flat-square&logo=huggingface&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-334155?style=flat-square&logo=scikitlearn&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-334155?style=flat-square&logo=numpy&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-334155?style=flat-square&logo=pandas&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-334155?style=flat-square&logo=langgraph&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-334155?style=flat-square&logo=docker&logoColor=white) ![ClearML](https://img.shields.io/badge/ClearML-334155?style=flat-square) ![Git](https://img.shields.io/badge/Git-334155?style=flat-square&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-334155?style=flat-square&logo=linux&logoColor=white)
+
+I also help students design experiments and review their code and results.
 
 <details>
 <summary>Publication details</summary>
