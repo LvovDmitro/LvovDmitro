@@ -8,13 +8,23 @@ I'm a researcher at [Med AI Lab, Innopolis University](https://ilya-pershin.com/
 
 *First-author paper · NeurIPS 2026 main track, accepted poster*
 
-A report generator can carry an old finding into a new report. SCFR controls how prior images and reports affect the description of the current examination, then chooses among reports built from valid sources. The release includes a CPU demo and separate fitting, inference and evaluation commands.
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/scfr-mobile.svg">
+  <img src="assets/scfr.svg" width="760" alt="Concept: the current examination and prior context enter source control before a current report is selected.">
+</picture>
+
+A report generator can carry an old finding into a new report. SCFR controls how prior images and reports influence the current description, then selects among reports built from valid sources. Includes a CPU demo and fitting, inference and evaluation commands.
 
 [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg)
 
 ### LogitGaze: predicting where people look
 
 *NeurIPS 2025 main track (LogitGaze-Med, first author) · ICLR 2025 workshop (LogitGaze)*
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/logitgaze-mobile.svg">
+  <img src="assets/logitgaze.svg" width="760" alt="Concept: image and search task provide vision-language semantics for predicting an eye-fixation sequence. The scanpath icon is illustrative.">
+</picture>
 
 What people look at depends on what they are searching for. LogitGaze uses semantic features from vision-language models to predict sequences of eye fixations. LogitGaze-Med extends this approach to radiologists' attention on chest X-rays.
 
@@ -24,36 +34,51 @@ What people look at depends on what they are searching for. LogitGaze uses seman
 
 *First-author paper · IEEE Access, 2026*
 
-Splitting a technical PDF into plain text can separate a figure from its caption. Our pipeline detects document elements and keeps those pairs together, adding descriptions from a vision-language model so that diagrams and other visual elements can be used for question answering.
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/document-qa-mobile.svg">
+  <img src="assets/document-qa.svg" width="760" alt="Concept: detect document layout, keep figures paired with captions, and add visual descriptions for technical question answering.">
+</picture>
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/mindlab-itmo/layout-aware-doc-segmentation) [![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://doi.org/10.1109/ACCESS.2026.3655813)
+Splitting a technical PDF into plain text can separate a figure from its caption. Our pipeline detects document elements, keeps those pairs together and adds descriptions from a vision-language model, making diagrams and other visual elements available for question answering.
+
+[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/mindlab-itmo/layout-aware-doc-segmentation) [![Paper](https://img.shields.io/badge/Paper-4F46E5?style=flat-square)](https://doi.org/10.1109/ACCESS.2026.3655813)
 
 ### Similar scores, different high-risk episodes
 
 *Coauthored paper · TAE 2026 workshop*
-
-A different representation of the same patient history produced different high-risk episode lists, while differences in aggregate predictive performance remained uncertain. In each primary top-decile selection, 15.5% of readmission episodes and 25.0% of ICU-transfer episodes were absent from the other representation's set.
 
 <picture>
   <source media="(max-width: 600px)" srcset="assets/ehr-selection-mobile.svg">
   <img src="assets/ehr-selection.svg" width="760" alt="Representation-specific share of each primary top-decile episode set: 34 of 219 for readmission (15.5%) and 51 of 204 for ICU transfer (25.0%).">
 </picture>
 
-<sub>Raw history versus Era+backfill on EHRSHOT. Figure from the public aggregates of Korobeinikova, Lvov and Pershin. [Source and definitions](assets/README.md).</sub>
+A different representation of the same patient history produced different high-risk episode lists, while differences in aggregate predictive performance remained uncertain. We audit which episodes enter the top decile, going beyond a comparison of overall scores.
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/ehrshot-state-or-space) [![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=RffArnWpec)
+<sub>Raw history versus Era+backfill on EHRSHOT. Public aggregates: Korobeinikova, Lvov and Pershin. [Figure source and definitions](assets/README.md#ehr-selection-data-figure).</sub>
+
+[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/ehrshot-state-or-space) [![Paper](https://img.shields.io/badge/Paper-1D4ED8?style=flat-square)](https://openreview.net/forum?id=RffArnWpec)
 
 ### Same top fraction, different workload
 
 *Coauthored paper · TAE 2026 workshop*
 
-Selecting the top 10% of a restricted cohort can create a different referral workload from selecting the top 10% of the full population. Our CDC Natality audit keeps risk scores fixed and separates the effect of who is eligible from the effect of how many people can be selected.
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/prenatal-mobile.svg">
+  <img src="assets/prenatal.svg" width="760" alt="Concept: with risk scores fixed, selecting ten percent of the full cohort or ten percent of an eligible cohort can imply different absolute workloads.">
+</picture>
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/vache4ogan/prenatal-risk-scoreability) [![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=puYbvC47rw)
+Selecting the top 10% of a restricted cohort can create a different referral workload from selecting the top 10% of the full population. Our CDC Natality audit holds risk scores fixed and separates eligibility from absolute selection capacity.
+
+[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/vache4ogan/prenatal-risk-scoreability) [![Paper](https://img.shields.io/badge/Paper-1D4ED8?style=flat-square)](https://openreview.net/forum?id=puYbvC47rw)
 
 ### AI Dungeon Master: eight agents, one game
 
 *Team project · LangGraph and LangChain*
+
+<picture>
+  <source media="(max-width: 600px)" srcset="assets/dungeon-mobile.svg">
+  <img src="assets/dungeon.svg" width="760" alt="Concept: eight agent nodes connect to a shared game state, coordinating story, rules and the game world.">
+</picture>
 
 Storytelling, combat rules and world state have to agree during a Dungeons & Dragons session. I contributed to a team prototype in which eight agents share game state and divide those responsibilities.
 

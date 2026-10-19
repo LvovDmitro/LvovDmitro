@@ -1,4 +1,18 @@
-# EHR selection figure
+# Profile visuals
+
+## Project schematics
+
+The SCFR, LogitGaze, document QA, prenatal audit and Dungeon Master SVGs are original explanatory diagrams. They summarize the linked repositories and papers; they are not figures reproduced from the papers, model predictions or experimental results. Their icons do not depict patient images or real eye-tracking observations.
+
+Each has a desktop view and a mobile layout with the same meaning. SCFR distinguishes the current examination from prior context. LogitGaze connects image/task semantics with fixation-sequence prediction. Document QA preserves figure-caption pairs. The prenatal audit contrasts denominators while holding risk scores fixed. Dungeon Master shows eight generic agents around shared game state; the connecting lines explain that shared-state concept rather than specifying all execution edges.
+
+- [SCFR](https://github.com/LvovDmitro/SCFR)
+- [LogitGaze](https://github.com/LvovDmitro/LogitGaze)
+- [Document segmentation](https://github.com/mindlab-itmo/layout-aware-doc-segmentation)
+- [Prenatal risk audit](https://github.com/vache4ogan/prenatal-risk-scoreability)
+- [AI Dungeon Master](https://github.com/ITMO-Agentic-AI/ai-dungeon-master)
+
+## EHR selection data figure
 
 `ehr-selection.svg` and `ehr-selection-mobile.svg` are desktop and mobile views of the same public aggregate results from **Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs**, by Polina Korobeinikova, Dmitry Lvov and Ilya Pershin.
 
