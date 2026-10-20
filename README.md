@@ -1,108 +1,124 @@
 # AI researcher & ML engineer
 
-I build models for medical imaging and human attention at [Med AI Lab, Innopolis University](https://ilya-pershin.com/lab/). I also study how data representation and evaluation choices affect clinical risk assessment.
+I work at [Med AI Lab, Innopolis University](https://ilya-pershin.com/lab/), building models for medical imaging and human attention. I also study how patient-history representations and evaluation choices affect clinical risk assessment.
 
-**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026](https://openreview.net/forum?id=GHvYdC6tmg) (accepted poster) · [IEEE Access 2026](https://doi.org/10.1109/ACCESS.2026.3655813)
+**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026 — accepted](https://openreview.net/forum?id=GHvYdC6tmg) · [IEEE Access 2025](https://doi.org/10.1109/ACCESS.2025.3566772) / [2026](https://doi.org/10.1109/ACCESS.2026.3655813)
+
+**Workshop papers:** [ICLR 2025](#iclr-2025-workshop) · [NeurIPS 2026](#neurips-2026-workshop)
 
 [![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0F766E?style=flat-square)](mailto:d.lvov@innopolis.ru)
 
-## Research & code
+## Conference papers
 
-### SCFR: using patient history in radiology reports
+### SCFR: longitudinal radiology reports
 
-*First-author paper · NeurIPS 2026 main track, accepted poster*
+**NeurIPS 2026 · accepted** · First author, with Ilya Pershin
 
+SCFR controls how a patient's prior images and reports influence a new radiology report. It selects among current-only and history-conditioned proposals without access to a reference report at inference. The release includes a CPU demo and separate fitting, inference and evaluation commands.
+
+The stress audit found lower reference-based false-positive counts than the wrong-history baseline, with a false-negative trade-off. [Audit results](https://github.com/LvovDmitro/SCFR/blob/main/evidence/confirmatory_gate_5000.md).
+
+[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![CPU demo](https://img.shields.io/badge/CPU_demo-334155?style=flat-square)](https://github.com/LvovDmitro/SCFR#install-and-run)
+
+<details>
+<summary>Method figure from the paper</summary>
+
+<a href="https://openreview.net/forum?id=GHvYdC6tmg"><img src="assets/scfr-paper-figure2.png" width="760" alt="SCFR paper, Figure 2: source-valid report generation and reference-free proposal selection. Original method figure from the author manuscript."></a>
+
+<sub>Figure 2 from the author manuscript. [Source](assets/README.md#scfr).</sub>
+
+</details>
+
+### LogitGaze-Med: predicting radiologists' attention
+
+**NeurIPS 2025** · First author, with Ilya Pershin
+
+We combine visual features, diagnostic text and semantic priors from a medical vision-language model to predict fixation locations and dwell times on chest X-rays. The paper also tests predicted gaze as additional supervision for pathology classification.
+
+On GazeSearch target-present trials, the CheXNet variant scored **0.419 ScanMatch**, against **0.332 for the GazeSearch baseline**, without fixation-duration information (Table 1).
+
+<sub>Original Figure 3. Rows, top to bottom: human scanpaths, LogitGaze-Med, GazeSearch. Target-present search tasks. [Source](assets/README.md#logitgaze-med).</sub>
+
+<a href="https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html">
 <picture>
-  <source media="(max-width: 600px)" srcset="assets/scfr-mobile.svg">
-  <img src="assets/scfr.svg" width="760" alt="Concept: the current examination and prior context enter source control before a current report is selected.">
+  <source media="(max-width: 600px)" srcset="assets/logitgaze-med-figure3-mobile.png">
+  <img src="assets/logitgaze-med-figure3.png" width="760" alt="Published comparison of human scanpaths (top), LogitGaze-Med predictions (middle), and GazeSearch predictions (bottom). Four cases in the full figure; the narrow-screen crop retains Normal and Cardiomegaly.">
 </picture>
+</a>
 
-A report generator can carry an old finding into a new report. SCFR controls how prior images and reports influence the current description, then selects among reports built from valid sources. Includes a CPU demo and fitting, inference and evaluation commands.
+[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg)
+## Journal papers
 
-### LogitGaze: predicting where people look
+### Multimodal document segmentation for technical QA
 
-*NeurIPS 2025 main track (LogitGaze-Med, first author) · ICLR 2025 workshop (LogitGaze)*
+**IEEE Access, 2026** · First author
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/logitgaze-mobile.svg">
-  <img src="assets/logitgaze.svg" width="760" alt="Concept: image and search task provide vision-language semantics for predicting an eye-fixation sequence. The scanpath icon is illustrative.">
-</picture>
+Our pipeline detects document elements with YOLOv10, keeps figures linked to their captions and adds descriptions from a vision-language model. Those fragments let a question-answering system use the diagrams and other visual content of a technical document.
 
-What people look at depends on what they are searching for. LogitGaze uses semantic features from vision-language models to predict sequences of eye fixations. LogitGaze-Med extends this approach to radiologists' attention on chest X-rays.
+[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://doi.org/10.1109/ACCESS.2026.3655813) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/mindlab-itmo/layout-aware-doc-segmentation)
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze) [![LogitGaze paper](https://img.shields.io/badge/Paper-LogitGaze-0F766E?style=flat-square)](https://openreview.net/forum?id=Om4j6IVb42) [![LogitGaze-Med paper](https://img.shields.io/badge/Paper-LogitGaze--Med-0F766E?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html)
+### Uncertainty in cardiac landmark detection
 
-### Document segmentation for technical question answering
+**IEEE Access, 2025** · First author
 
-*First-author paper · IEEE Access, 2026*
+Uncertainty estimation for cardiac landmarks and disease classification from chest X-rays, using multiple radiologist annotations to account for label noise.
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/document-qa-mobile.svg">
-  <img src="assets/document-qa.svg" width="760" alt="Concept: detect document layout, keep figures paired with captions, and add visual descriptions for technical question answering.">
-</picture>
+[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://doi.org/10.1109/ACCESS.2025.3566772)
 
-Splitting a technical PDF into plain text can separate a figure from its caption. Our pipeline detects document elements, keeps those pairs together and adds descriptions from a vision-language model, making diagrams and other visual elements available for question answering.
+## Workshop papers
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/mindlab-itmo/layout-aware-doc-segmentation) [![Paper](https://img.shields.io/badge/Paper-4F46E5?style=flat-square)](https://doi.org/10.1109/ACCESS.2026.3655813)
+### ICLR 2025 workshop
 
-### Similar scores, different high-risk episodes
+[Reasoning and Planning for Large Language Models](https://workshop-llm-reasoning-planning.github.io/) · Coauthor
 
-*Coauthored paper · TAE 2026 workshop*
+**LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models**
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/ehr-selection-mobile.svg">
-  <img src="assets/ehr-selection.svg" width="760" alt="Representation-specific share of each primary top-decile episode set: 34 of 219 for readmission (15.5%) and 51 of 204 for ICU transfer (25.0%).">
-</picture>
+Our earlier scanpath-prediction work uses word-level semantics extracted from a vision-language model through the logit lens. It studies visual search in natural images; LogitGaze-Med develops the medical-imaging direction.
 
-A different representation of the same patient history produced different high-risk episode lists, while differences in aggregate predictive performance remained uncertain. We audit which episodes enter the top decile, going beyond a comparison of overall scores.
+[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=Om4j6IVb42) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
 
-<sub>Raw history versus Era+backfill on EHRSHOT. Public aggregates: Korobeinikova, Lvov and Pershin. [Figure source and definitions](assets/README.md#ehr-selection-data-figure).</sub>
+### NeurIPS 2026 workshop
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/ehrshot-state-or-space) [![Paper](https://img.shields.io/badge/Paper-1D4ED8?style=flat-square)](https://openreview.net/forum?id=RffArnWpec)
+[Can We Trust AI Evaluation? (TAE / Trust-AI-Eval)](https://tai-eval.github.io/) · Two accepted papers, coauthor
 
-### Same top fraction, different workload
+**Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs**
 
-*Coauthored paper · TAE 2026 workshop*
+Comparing raw and Era+backfill histories on EHRSHOT, 15.5% of readmission episodes and 25.0% of ICU-transfer episodes in each primary top-decile selection were unique to the representation. Differences in aggregate predictive performance remained uncertain.
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/prenatal-mobile.svg">
-  <img src="assets/prenatal.svg" width="760" alt="Concept: with risk scores fixed, selecting ten percent of the full cohort or ten percent of an eligible cohort can imply different absolute workloads.">
-</picture>
+[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=RffArnWpec) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/ehrshot-state-or-space)
 
-Selecting the top 10% of a restricted cohort can create a different referral workload from selecting the top 10% of the full population. Our CDC Natality audit holds risk scores fixed and separates eligibility from absolute selection capacity.
+**Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation**
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/vache4ogan/prenatal-risk-scoreability) [![Paper](https://img.shields.io/badge/Paper-1D4ED8?style=flat-square)](https://openreview.net/forum?id=puYbvC47rw)
+With the same risk scores, changing who is eligible can also change how many people are selected. We separate these effects in a CDC Natality audit of referral workload.
 
-### AI Dungeon Master: eight agents, one game
+[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=puYbvC47rw) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/vache4ogan/prenatal-risk-scoreability)
 
-*Team project · LangGraph and LangChain*
+## Engineering
 
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/dungeon-mobile.svg">
-  <img src="assets/dungeon.svg" width="760" alt="Concept: eight agent nodes connect to a shared game state, coordinating story, rules and the game world.">
-</picture>
+### AI Dungeon Master
 
-Storytelling, combat rules and world state have to agree during a Dungeons & Dragons session. I contributed to a team prototype in which eight agents share game state and divide those responsibilities.
+**Team prototype · LangGraph and LangChain**
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master)
+Eight agents coordinate storytelling, rules and world state for Dungeons & Dragons. I added action/question routing and refactored the LangGraph orchestrator, including hooks for world and player-state updates.
+
+[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master) [![Contribution](https://img.shields.io/badge/Contribution-0F766E?style=flat-square)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master/commit/a6ff27bfbd4385df9d1357b17397e855c8025903)
 
 ## Tools
 
-![Python](https://img.shields.io/badge/Python-334155?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-334155?style=flat-square&logo=pytorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-334155?style=flat-square&logo=huggingface&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-334155?style=flat-square&logo=scikitlearn&logoColor=white) ![NumPy](https://img.shields.io/badge/NumPy-334155?style=flat-square&logo=numpy&logoColor=white) ![pandas](https://img.shields.io/badge/pandas-334155?style=flat-square&logo=pandas&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-334155?style=flat-square&logo=langgraph&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-334155?style=flat-square&logo=docker&logoColor=white) ![ClearML](https://img.shields.io/badge/ClearML-334155?style=flat-square) ![Git](https://img.shields.io/badge/Git-334155?style=flat-square&logo=git&logoColor=white) ![Linux](https://img.shields.io/badge/Linux-334155?style=flat-square&logo=linux&logoColor=white)
+![Python](https://img.shields.io/badge/Python-334155?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-334155?style=flat-square&logo=pytorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-334155?style=flat-square&logo=huggingface&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-334155?style=flat-square&logo=scikitlearn&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-334155?style=flat-square&logo=langgraph&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-334155?style=flat-square&logo=docker&logoColor=white) ![ClearML](https://img.shields.io/badge/ClearML-334155?style=flat-square) ![Linux](https://img.shields.io/badge/Linux-334155?style=flat-square&logo=linux&logoColor=white)
 
 I also help students design experiments and review their code and results.
 
 <details>
-<summary>Publication details</summary>
+<summary>Full publication titles</summary>
 
-- **Source-Causal Control of Historical Context in Longitudinal Radiology Report Generation** (NeurIPS 2026, main track, accepted poster). [Paper](https://openreview.net/forum?id=GHvYdC6tmg)
-- **From Human Attention to Diagnosis: Semantic Patch-Level Integration of Vision-Language Models in Medical Imaging** (NeurIPS 2025, main track). [Proceedings](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html)
-- **Enhancing Technical Question Answering Quality Through Multimodal Document Segmentation** (IEEE Access, 2026). [DOI](https://doi.org/10.1109/ACCESS.2026.3655813)
-- **Uncertainty Estimation in Cardio Landmark Detection and Heart Disease Diagnosis on Chest X-Ray Images** (IEEE Access, 2025). [DOI](https://doi.org/10.1109/ACCESS.2025.3566772)
-- **LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models** (ICLR 2025, Workshop on Reasoning and Planning for Large Language Models). [Paper](https://openreview.net/forum?id=Om4j6IVb42)
-- **Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs** (TAE workshop, NeurIPS 2026). [Paper](https://openreview.net/forum?id=RffArnWpec)
-- **Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation** (TAE 2026 workshop). [Paper](https://openreview.net/forum?id=puYbvC47rw)
+- **Source-Causal Control of Historical Context in Longitudinal Radiology Report Generation** — NeurIPS 2026, accepted. [Paper](https://openreview.net/forum?id=GHvYdC6tmg)
+- **From Human Attention to Diagnosis: Semantic Patch-Level Integration of Vision-Language Models in Medical Imaging** — NeurIPS 2025. [Proceedings](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html)
+- **Enhancing Technical Question Answering Quality Through Multimodal Document Segmentation** — IEEE Access, 2026. [DOI](https://doi.org/10.1109/ACCESS.2026.3655813)
+- **Uncertainty Estimation in Cardio Landmark Detection and Heart Disease Diagnosis on Chest X-Ray Images** — IEEE Access, 2025. [DOI](https://doi.org/10.1109/ACCESS.2025.3566772)
+- **LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models** — ICLR 2025, Workshop on Reasoning and Planning for Large Language Models. [Paper](https://openreview.net/forum?id=Om4j6IVb42)
+- **Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=RffArnWpec)
+- **Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=puYbvC47rw)
 
 </details>
