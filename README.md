@@ -4,7 +4,7 @@ I work at [Med AI Lab, Innopolis University](https://ilya-pershin.com/lab/), bui
 
 **First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026 — accepted](https://openreview.net/forum?id=GHvYdC6tmg) · [IEEE Access 2025](https://doi.org/10.1109/ACCESS.2025.3566772) / [2026](https://doi.org/10.1109/ACCESS.2026.3655813)
 
-**Workshop papers:** [ICLR 2025](#iclr-2025-workshop) · [NeurIPS 2026](#neurips-2026-workshop)
+**Workshop papers:** [ICLR 2025](#user-content-iclr-2025-workshop) · [NeurIPS 2026](#user-content-neurips-2026-workshop)
 
 [![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0F766E?style=flat-square)](mailto:d.lvov@innopolis.ru)
 
