@@ -6,7 +6,7 @@ I work at [Med AI Lab, Innopolis University](https://ilya-pershin.com/lab/), bui
 
 **Workshop papers:** [ICLR 2025](#user-content-iclr-2025-workshop) · [NeurIPS 2026](#user-content-neurips-2026-workshop)
 
-[![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0F766E?style=flat-square)](mailto:d.lvov@innopolis.ru)
+[![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0969DA?style=flat-square)](mailto:d.lvov@innopolis.ru)
 
 ## Conference papers
 
@@ -18,16 +18,7 @@ SCFR controls how a patient's prior images and reports influence a new radiology
 
 The stress audit found lower reference-based false-positive counts than the wrong-history baseline, with a false-negative trade-off. [Audit results](https://github.com/LvovDmitro/SCFR/blob/main/evidence/confirmatory_gate_5000.md).
 
-[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![CPU demo](https://img.shields.io/badge/CPU_demo-334155?style=flat-square)](https://github.com/LvovDmitro/SCFR#install-and-run)
-
-<details>
-<summary>Method figure from the paper</summary>
-
-<a href="https://openreview.net/forum?id=GHvYdC6tmg"><img src="assets/scfr-paper-figure2.png" width="760" alt="SCFR paper, Figure 2: source-valid report generation and reference-free proposal selection. Original method figure from the author manuscript."></a>
-
-<sub>Figure 2 from the author manuscript. [Source](assets/README.md#scfr).</sub>
-
-</details>
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![CPU demo](https://img.shields.io/badge/CPU_demo-30363D?style=flat-square)](https://github.com/LvovDmitro/SCFR#install-and-run)
 
 ### LogitGaze-Med: predicting radiologists' attention
 
@@ -37,34 +28,25 @@ We combine visual features, diagnostic text and semantic priors from a medical v
 
 On GazeSearch target-present trials, the CheXNet variant scored **0.419 ScanMatch**, against **0.332 for the GazeSearch baseline**, without fixation-duration information (Table 1).
 
-<sub>Original Figure 3. Rows, top to bottom: human scanpaths, LogitGaze-Med, GazeSearch. Target-present search tasks. [Source](assets/README.md#logitgaze-med).</sub>
-
-<a href="https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html">
-<picture>
-  <source media="(max-width: 600px)" srcset="assets/logitgaze-med-figure3-mobile.png">
-  <img src="assets/logitgaze-med-figure3.png" width="760" alt="Published comparison of human scanpaths (top), LogitGaze-Med predictions (middle), and GazeSearch predictions (bottom). Four cases in the full figure; the narrow-screen crop retains Normal and Cardiomegaly.">
-</picture>
-</a>
-
-[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
 
 ## Journal papers
 
 ### Multimodal document segmentation for technical QA
 
-**IEEE Access, 2026** · First author
+**IEEE Access 2026** · First author
 
 Our pipeline detects document elements with YOLOv10, keeps figures linked to their captions and adds descriptions from a vision-language model. Those fragments let a question-answering system use the diagrams and other visual content of a technical document.
 
-[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://doi.org/10.1109/ACCESS.2026.3655813) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/mindlab-itmo/layout-aware-doc-segmentation)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://doi.org/10.1109/ACCESS.2026.3655813) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/mindlab-itmo/layout-aware-doc-segmentation)
 
 ### Uncertainty in cardiac landmark detection
 
-**IEEE Access, 2025** · First author
+**IEEE Access 2025** · First author
 
 Uncertainty estimation for cardiac landmarks and disease classification from chest X-rays, using multiple radiologist annotations to account for label noise.
 
-[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://doi.org/10.1109/ACCESS.2025.3566772)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://doi.org/10.1109/ACCESS.2025.3566772)
 
 ## Workshop papers
 
@@ -76,7 +58,7 @@ Uncertainty estimation for cardiac landmarks and disease classification from che
 
 Our earlier scanpath-prediction work uses word-level semantics extracted from a vision-language model through the logit lens. It studies visual search in natural images; LogitGaze-Med develops the medical-imaging direction.
 
-[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=Om4j6IVb42) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=Om4j6IVb42) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
 
 ### NeurIPS 2026 workshop
 
@@ -86,13 +68,13 @@ Our earlier scanpath-prediction work uses word-level semantics extracted from a 
 
 Comparing raw and Era+backfill histories on EHRSHOT, 15.5% of readmission episodes and 25.0% of ICU-transfer episodes in each primary top-decile selection were unique to the representation. Differences in aggregate predictive performance remained uncertain.
 
-[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=RffArnWpec) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/ehrshot-state-or-space)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=RffArnWpec) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/ehrshot-state-or-space)
 
 **Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation**
 
 With the same risk scores, changing who is eligible can also change how many people are selected. We separate these effects in a CDC Natality audit of referral workload.
 
-[![Paper](https://img.shields.io/badge/Paper-0F766E?style=flat-square)](https://openreview.net/forum?id=puYbvC47rw) [![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/vache4ogan/prenatal-risk-scoreability)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=puYbvC47rw) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/vache4ogan/prenatal-risk-scoreability)
 
 ## Engineering
 
@@ -102,11 +84,11 @@ With the same risk scores, changing who is eligible can also change how many peo
 
 Eight agents coordinate storytelling, rules and world state for Dungeons & Dragons. I added action/question routing and refactored the LangGraph orchestrator, including hooks for world and player-state updates.
 
-[![Code](https://img.shields.io/badge/Code-334155?style=flat-square&logo=github&logoColor=white)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master) [![Contribution](https://img.shields.io/badge/Contribution-0F766E?style=flat-square)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master/commit/a6ff27bfbd4385df9d1357b17397e855c8025903)
+[![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master) [![Contribution](https://img.shields.io/badge/Contribution-0969DA?style=flat-square)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master/commit/a6ff27bfbd4385df9d1357b17397e855c8025903)
 
 ## Tools
 
-![Python](https://img.shields.io/badge/Python-334155?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-334155?style=flat-square&logo=pytorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-334155?style=flat-square&logo=huggingface&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-334155?style=flat-square&logo=scikitlearn&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-334155?style=flat-square&logo=langgraph&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-334155?style=flat-square&logo=docker&logoColor=white) ![ClearML](https://img.shields.io/badge/ClearML-334155?style=flat-square) ![Linux](https://img.shields.io/badge/Linux-334155?style=flat-square&logo=linux&logoColor=white)
+![Python](https://img.shields.io/badge/Python-30363D?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-30363D?style=flat-square&logo=pytorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-30363D?style=flat-square&logo=huggingface&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-30363D?style=flat-square&logo=scikitlearn&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-30363D?style=flat-square&logo=langgraph&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-30363D?style=flat-square&logo=docker&logoColor=white) ![ClearML](https://img.shields.io/badge/ClearML-30363D?style=flat-square) ![Linux](https://img.shields.io/badge/Linux-30363D?style=flat-square&logo=linux&logoColor=white)
 
 I also help students design experiments and review their code and results.
 
@@ -121,4 +103,4 @@ I also help students design experiments and review their code and results.
 - **Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=RffArnWpec)
 - **Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=puYbvC47rw)
 
-</details>
+</details>
