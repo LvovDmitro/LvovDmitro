@@ -1,18 +1,18 @@
 # AI researcher & ML engineer
 
-I work at [Med AI Lab, Innopolis University](https://ilya-pershin.com/lab/), building models for medical imaging and human attention. I also study how patient-history representations and evaluation choices affect clinical risk assessment.
+I am a researcher in the [AI in Medicine Lab, Innopolis University](https://ilya-pershin.com/lab/) and a part-time engineer in ITMO University's Mind Lab. I build models for medical imaging and human attention, and study how patient-history representations and evaluation choices affect clinical risk assessment.
 
-**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026 — accepted](https://openreview.net/forum?id=GHvYdC6tmg) · [IEEE Access 2025](https://doi.org/10.1109/ACCESS.2025.3566772) / [2026](https://doi.org/10.1109/ACCESS.2026.3655813)
+**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026](https://openreview.net/forum?id=GHvYdC6tmg) · [IEEE Access 2025](https://doi.org/10.1109/ACCESS.2025.3566772) / [2026](https://doi.org/10.1109/ACCESS.2026.3655813)
 
 **Workshop papers:** [ICLR 2025](#user-content-iclr-2025-workshop) · [NeurIPS 2026](#user-content-neurips-2026-workshop)
 
-[![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0969DA?style=flat-square)](mailto:d.lvov@innopolis.ru)
+[![Website](https://img.shields.io/badge/Website-0969DA?style=flat-square)](https://lvovdmitro.github.io/) [![CV](https://img.shields.io/badge/CV-30363D?style=flat-square)](https://lvovdmitro.github.io/Dmitry_Lvov_Research_CV.pdf?v=20261025-final) [![ORCID](https://img.shields.io/badge/ORCID-30363D?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-3211-5853) [![Scholar](https://img.shields.io/badge/Scholar-30363D?style=flat-square&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=22HEGHEAAAAJ) [![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0969DA?style=flat-square)](mailto:d.lvov@innopolis.ru)
 
 ## Conference papers
 
 ### SCFR: longitudinal radiology reports
 
-**NeurIPS 2026 · accepted** · First author, with Ilya Pershin
+**NeurIPS 2026** · First author, with Ilya Pershin
 
 SCFR controls how a patient's prior images and reports influence a new radiology report. It selects among current-only and history-conditioned proposals without access to a reference report at inference. The release includes a CPU demo and separate fitting, inference and evaluation commands.
 
@@ -52,7 +52,7 @@ Uncertainty estimation for cardiac landmarks and disease classification from che
 
 ### ICLR 2025 workshop
 
-[Reasoning and Planning for Large Language Models](https://workshop-llm-reasoning-planning.github.io/) · Coauthor
+[Reasoning and Planning for Large Language Models](https://workshop-llm-reasoning-planning.github.io/) · First author
 
 **LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models**
 
@@ -62,7 +62,7 @@ Our earlier scanpath-prediction work uses word-level semantics extracted from a 
 
 ### NeurIPS 2026 workshop
 
-[Can We Trust AI Evaluation? (TAE / Trust-AI-Eval)](https://tai-eval.github.io/) · Two accepted papers, coauthor
+[Can We Trust AI Evaluation? (TAE / Trust-AI-Eval)](https://tai-eval.github.io/) · Two papers, second author on both; students are first authors.
 
 **Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs**
 
@@ -93,14 +93,23 @@ Eight agents coordinate storytelling, rules and world state for Dungeons & Drago
 I also help students design experiments and review their code and results.
 
 <details>
+
 <summary>Full publication titles</summary>
 
-- **Source-Causal Control of Historical Context in Longitudinal Radiology Report Generation** — NeurIPS 2026, accepted. [Paper](https://openreview.net/forum?id=GHvYdC6tmg)
+- **Source-Causal Control of Historical Context in Longitudinal Radiology Report Generation** — NeurIPS 2026. [Paper](https://openreview.net/forum?id=GHvYdC6tmg)
+
 - **From Human Attention to Diagnosis: Semantic Patch-Level Integration of Vision-Language Models in Medical Imaging** — NeurIPS 2025. [Proceedings](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html)
+
 - **Enhancing Technical Question Answering Quality Through Multimodal Document Segmentation** — IEEE Access, 2026. [DOI](https://doi.org/10.1109/ACCESS.2026.3655813)
+
 - **Uncertainty Estimation in Cardio Landmark Detection and Heart Disease Diagnosis on Chest X-Ray Images** — IEEE Access, 2025. [DOI](https://doi.org/10.1109/ACCESS.2025.3566772)
+
+- **Automatic Calculation of Cardiometric Coefficients on Chest X-Ray Images** — IEEE Access, 2025. [DOI](https://doi.org/10.1109/ACCESS.2024.3524116)
+
 - **LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models** — ICLR 2025, Workshop on Reasoning and Planning for Large Language Models. [Paper](https://openreview.net/forum?id=Om4j6IVb42)
+
 - **Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=RffArnWpec)
+
 - **Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=puYbvC47rw)
 
-</details>
+</details>
