@@ -18,7 +18,7 @@ SCFR controls how a patient's prior images and reports influence a new radiology
 
 The stress audit found lower reference-based false-positive counts than the wrong-history baseline, with a false-negative trade-off. [Audit results](https://github.com/LvovDmitro/SCFR/blob/main/evidence/confirmatory_gate_5000.md).
 
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![CPU demo](https://img.shields.io/badge/CPU_demo-30363D?style=flat-square)](https://github.com/LvovDmitro/SCFR#install-and-run)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![CPU demo](https://img.shields.io/badge/CPU_demo-30363D?style=flat-square)](https://github.com/LvovDmitro/SCFR#quick-start)
 
 ### LogitGaze-Med: predicting radiologists' attention
 
@@ -28,7 +28,7 @@ We combine visual features, diagnostic text and semantic priors from a medical v
 
 On GazeSearch target-present trials, the CheXNet variant scored **0.419 ScanMatch**, against **0.332 for the GazeSearch baseline**, without fixation-duration information (Table 1).
 
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
+[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) [![Related code](https://img.shields.io/badge/Related_code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
 
 ## Journal papers
 
