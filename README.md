@@ -2,7 +2,7 @@
 
 I am a researcher in the [AI in Medicine Lab, Innopolis University](https://ilya-pershin.com/lab/) and a part-time engineer in ITMO University's Mind Lab. I build models for medical imaging and human attention, and study how patient-history representations and evaluation choices affect clinical risk assessment.
 
-**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026](https://openreview.net/forum?id=GHvYdC6tmg) · [IEEE Access 2025](https://doi.org/10.1109/ACCESS.2025.3566772) / [2026](https://doi.org/10.1109/ACCESS.2026.3655813)
+**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026](https://openreview.net/forum?id=GHvYdC6tmg) · [IEEE Access 2025](https://doi.org/10.1109/ACCESS.2025.3566772) / [2026](https://doi.org/10.1109/ACCESS.2026.3655813) · [Journal of Pathology Informatics](#user-content-compact-visual-evidence-for-whole-slide-pathology)
 
 **Workshop papers:** [ICLR 2025](#user-content-iclr-2025-workshop) · [NeurIPS 2026](#user-content-neurips-2026-workshop)
 
@@ -31,6 +31,14 @@ On GazeSearch target-present trials, the CheXNet variant scored **0.419 ScanMatc
 [![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) [![Related code](https://img.shields.io/badge/Related_code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
 
 ## Journal papers
+
+### Compact visual evidence for whole-slide pathology
+
+**Journal of Pathology Informatics (accepted)** · First author, with Matvei Trifonov, Daria Galushko and Ilya Pershin
+
+We measure where attention-selected patches fall relative to annotated tumour and how retaining, deleting or replacing them changes a whole-slide model's confidence. On CAMELYON16, at least one of the three highest-attention patch centres fell within a tumour contour on **48 of 49 positive slides** in an exploratory analysis.
+
+[![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/compact-visual-evidence) [![CPU replay](https://img.shields.io/badge/CPU_replay-30363D?style=flat-square)](https://github.com/LvovDmitro/compact-visual-evidence#quick-start)
 
 ### Multimodal document segmentation for technical QA
 
@@ -99,6 +107,8 @@ I also help students design experiments and review their code and results.
 - **Source-Causal Control of Historical Context in Longitudinal Radiology Report Generation** — NeurIPS 2026. [Paper](https://openreview.net/forum?id=GHvYdC6tmg)
 
 - **From Human Attention to Diagnosis: Semantic Patch-Level Integration of Vision-Language Models in Medical Imaging** — NeurIPS 2025. [Proceedings](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html)
+
+- **From whole-slide prediction to compact visual evidence: spatial and functional assessment of attention-selected patches** — Journal of Pathology Informatics (accepted). [Code](https://github.com/LvovDmitro/compact-visual-evidence)
 
 - **Enhancing Technical Question Answering Quality Through Multimodal Document Segmentation** — IEEE Access, 2026. [DOI](https://doi.org/10.1109/ACCESS.2026.3655813)
 
