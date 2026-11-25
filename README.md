@@ -1,125 +1,43 @@
-# AI researcher & ML engineer
+# Dmitry Lvov
 
-I am a researcher in the [AI in Medicine Lab, Innopolis University](https://ilya-pershin.com/lab/) and a part-time engineer in ITMO University's Mind Lab. I build models for medical imaging and human attention, and study how patient-history representations and evaluation choices affect clinical risk assessment.
+I build and evaluate models for medical imaging at Innopolis University’s [AI in Medicine Lab](https://ilya-pershin.com/lab/). I’m also a part-time engineer at ITMO University’s Mind Lab.
 
-**First-author papers:** [NeurIPS 2025](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [NeurIPS 2026](https://openreview.net/forum?id=GHvYdC6tmg) · [IEEE Access 2025](https://doi.org/10.1109/ACCESS.2025.3566772) / [2026](https://doi.org/10.1109/ACCESS.2026.3655813) · [Journal of Pathology Informatics](#user-content-compact-visual-evidence-for-whole-slide-pathology)
+[Website](https://lvovdmitro.github.io/) · [CV](https://lvovdmitro.github.io/Dmitry_Lvov_Research_CV.pdf) · [ORCID](https://orcid.org/0009-0008-3211-5853)
 
-**Workshop papers:** [ICLR 2025](#user-content-iclr-2025-workshop) · [NeurIPS 2026](#user-content-neurips-2026-workshop)
+## Main-track conference papers
 
-[![Website](https://img.shields.io/badge/Website-0969DA?style=flat-square)](https://lvovdmitro.github.io/) [![CV](https://img.shields.io/badge/CV-30363D?style=flat-square)](https://lvovdmitro.github.io/Dmitry_Lvov_Research_CV.pdf?v=20261025-final) [![ORCID](https://img.shields.io/badge/ORCID-30363D?style=flat-square&logo=orcid&logoColor=white)](https://orcid.org/0009-0008-3211-5853) [![Scholar](https://img.shields.io/badge/Scholar-30363D?style=flat-square&logo=googlescholar&logoColor=white)](https://scholar.google.com/citations?user=22HEGHEAAAAJ) [![OpenReview](https://img.shields.io/badge/OpenReview-30363D?style=flat-square)](https://openreview.net/profile?id=~Dmitry_Lvov1) [![ResearchGate](https://img.shields.io/badge/ResearchGate-30363D?style=flat-square)](https://www.researchgate.net/profile/Dmitry-Lvov-4) [![Email](https://img.shields.io/badge/Email-d.lvov%40innopolis.ru-0969DA?style=flat-square)](mailto:d.lvov@innopolis.ru)
+### SCFR and prior exams in radiology reports
 
-## Conference papers
+NeurIPS 2026 · [Paper](https://neurips.cc/virtual/2026/loc/sydney/poster/154092) · [Code](https://github.com/LvovDmitro/SCFR)
 
-### SCFR: longitudinal radiology reports
+I led an audit that varied the available history while keeping each current chest X-ray fixed. SCFR uses a report generated from the current image alone to choose among candidate reports.
 
-**NeurIPS 2026** · First author, with Ilya Pershin
+### LogitGaze-Med and radiologists’ gaze
 
-SCFR controls how a patient's prior images and reports influence a new radiology report. It selects among current-only and history-conditioned proposals without access to a reference report at inference. The release includes a CPU demo and separate fitting, inference and evaluation commands.
+NeurIPS 2025 · [Paper](https://proceedings.neurips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) · [Recorded talk](https://slideslive.com/39050986/from-human-attention-to-diagnosis-semantic-patchlevel-integration-of-visionlanguage-models-in-medical-imaging)
 
-The stress audit found lower reference-based false-positive counts than the wrong-history baseline, with a false-negative trade-off. [Audit results](https://github.com/LvovDmitro/SCFR/blob/main/evidence/confirmatory_gate_5000.md).
+I used patch-level features from a medical vision-language model to predict where radiologists look. I tested whether the predicted fixations helped train a chest X-ray classifier.
 
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=GHvYdC6tmg) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/SCFR) [![CPU demo](https://img.shields.io/badge/CPU_demo-30363D?style=flat-square)](https://github.com/LvovDmitro/SCFR#quick-start)
-
-### LogitGaze-Med: predicting radiologists' attention
-
-**NeurIPS 2025** · First author, with Ilya Pershin
-
-We combine visual features, diagnostic text and semantic priors from a medical vision-language model to predict fixation locations and dwell times on chest X-rays. The paper also tests predicted gaze as additional supervision for pathology classification.
-
-On GazeSearch target-present trials, the CheXNet variant scored **0.419 ScanMatch**, against **0.332 for the GazeSearch baseline**, without fixation-duration information (Table 1).
-
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html) [![Related code](https://img.shields.io/badge/Related_code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
-
-## Journal papers
+## Journal articles
 
 ### Compact visual evidence for whole-slide pathology
 
-**Journal of Pathology Informatics (accepted)** · First author, with Matvei Trifonov, Daria Galushko and Ilya Pershin
+Journal of Pathology Informatics, 2026 · [Article 100763](https://doi.org/10.1016/j.jpi.2026.100763) · [Code](https://github.com/LvovDmitro/compact-visual-evidence)
 
-We measure where attention-selected patches fall relative to annotated tumour and how retaining, deleting or replacing them changes a whole-slide model's confidence. On CAMELYON16, at least one of the three highest-attention patch centres fell within a tumour contour on **48 of 49 positive slides** in an exploratory analysis.
+I measured how a whole-slide model’s confidence changed when selected patches were kept or removed, using equally sized random sets from the same slide as controls.
 
-[![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/compact-visual-evidence) [![CPU replay](https://img.shields.io/badge/CPU_replay-30363D?style=flat-square)](https://github.com/LvovDmitro/compact-visual-evidence#quick-start)
-
-### Multimodal document segmentation for technical QA
-
-**IEEE Access 2026** · First author
-
-Our pipeline detects document elements with YOLOv10, keeps figures linked to their captions and adds descriptions from a vision-language model. Those fragments let a question-answering system use the diagrams and other visual content of a technical document.
-
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://doi.org/10.1109/ACCESS.2026.3655813) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/mindlab-itmo/layout-aware-doc-segmentation)
-
-### Uncertainty in cardiac landmark detection
-
-**IEEE Access 2025** · First author
-
-Uncertainty estimation for cardiac landmarks and disease classification from chest X-rays, using multiple radiologist annotations to account for label noise.
-
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://doi.org/10.1109/ACCESS.2025.3566772)
+- [Multimodal document segmentation for technical question answering](https://doi.org/10.1109/ACCESS.2026.3655813), IEEE Access 2026. [Code](https://github.com/mindlab-itmo/layout-aware-doc-segmentation)
+- [Uncertainty in cardiac landmark detection and disease diagnosis on chest X-rays](https://doi.org/10.1109/ACCESS.2025.3566772), IEEE Access 2025.
+- [Automatic calculation of cardiometric coefficients on chest X-rays](https://doi.org/10.1109/ACCESS.2024.3524116), IEEE Access 2025.
 
 ## Workshop papers
 
-### ICLR 2025 workshop
-
-[Reasoning and Planning for Large Language Models](https://workshop-llm-reasoning-planning.github.io/) · First author
-
-**LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models**
-
-Our earlier scanpath-prediction work uses word-level semantics extracted from a vision-language model through the logit lens. It studies visual search in natural images; LogitGaze-Med develops the medical-imaging direction.
-
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=Om4j6IVb42) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/LogitGaze)
-
-### NeurIPS 2026 workshop
-
-[Can We Trust AI Evaluation? (TAE / Trust-AI-Eval)](https://tai-eval.github.io/) · Two papers, second author on both; students are first authors.
-
-**Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs**
-
-Comparing raw and Era+backfill histories on EHRSHOT, 15.5% of readmission episodes and 25.0% of ICU-transfer episodes in each primary top-decile selection were unique to the representation. Differences in aggregate predictive performance remained uncertain.
-
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=RffArnWpec) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/LvovDmitro/ehrshot-state-or-space)
-
-**Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation**
-
-With the same risk scores, changing who is eligible can also change how many people are selected. We separate these effects in a CDC Natality audit of referral workload.
-
-[![Paper](https://img.shields.io/badge/Paper-0969DA?style=flat-square)](https://openreview.net/forum?id=puYbvC47rw) [![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/vache4ogan/prenatal-risk-scoreability)
+- [Similar Scores, Different High-Risk Episodes](https://neurips.cc/virtual/2026/loc/sydney/178289), NeurIPS 2026 workshop, Can We Trust AI Evaluation? [Code](https://github.com/LvovDmitro/ehrshot-state-or-space)
+- [Same Top Fraction, Different Workload](https://neurips.cc/virtual/2026/loc/sydney/178202), NeurIPS 2026 workshop, Can We Trust AI Evaluation? [Code](https://github.com/vache4ogan/prenatal-risk-scoreability)
+- [LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models](https://openreview.net/forum?id=Om4j6IVb42), Reasoning and Planning for Large Language Models, ICLR 2025. [Code for natural-image experiments](https://github.com/LvovDmitro/LogitGaze)
 
 ## Engineering
 
-### AI Dungeon Master
+I added action and question routing and refactored the LangGraph orchestration in the [AI Dungeon Master](https://github.com/ITMO-Agentic-AI/ai-dungeon-master) prototype.
 
-**Team prototype · LangGraph and LangChain**
-
-Eight agents coordinate storytelling, rules and world state for Dungeons & Dragons. I added action/question routing and refactored the LangGraph orchestrator, including hooks for world and player-state updates.
-
-[![Code](https://img.shields.io/badge/Code-30363D?style=flat-square&logo=github&logoColor=white)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master) [![Contribution](https://img.shields.io/badge/Contribution-0969DA?style=flat-square)](https://github.com/ITMO-Agentic-AI/ai-dungeon-master/commit/a6ff27bfbd4385df9d1357b17397e855c8025903)
-
-## Tools
-
-![Python](https://img.shields.io/badge/Python-30363D?style=flat-square&logo=python&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-30363D?style=flat-square&logo=pytorch&logoColor=white) ![Transformers](https://img.shields.io/badge/Transformers-30363D?style=flat-square&logo=huggingface&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-30363D?style=flat-square&logo=scikitlearn&logoColor=white) ![LangGraph](https://img.shields.io/badge/LangGraph-30363D?style=flat-square&logo=langgraph&logoColor=white) ![Docker](https://img.shields.io/badge/Docker-30363D?style=flat-square&logo=docker&logoColor=white) ![ClearML](https://img.shields.io/badge/ClearML-30363D?style=flat-square) ![Linux](https://img.shields.io/badge/Linux-30363D?style=flat-square&logo=linux&logoColor=white)
-
-I also help students design experiments and review their code and results.
-
-<details>
-
-<summary>Full publication titles</summary>
-
-- **Source-Causal Control of Historical Context in Longitudinal Radiology Report Generation** — NeurIPS 2026. [Paper](https://openreview.net/forum?id=GHvYdC6tmg)
-
-- **From Human Attention to Diagnosis: Semantic Patch-Level Integration of Vision-Language Models in Medical Imaging** — NeurIPS 2025. [Proceedings](https://proceedings.nips.cc/paper_files/paper/2025/hash/be7bc8aa38696723cebe296b6122d7e3-Abstract-Conference.html)
-
-- **From whole-slide prediction to compact visual evidence: spatial and functional assessment of attention-selected patches** — Journal of Pathology Informatics (accepted). [Code](https://github.com/LvovDmitro/compact-visual-evidence)
-
-- **Enhancing Technical Question Answering Quality Through Multimodal Document Segmentation** — IEEE Access, 2026. [DOI](https://doi.org/10.1109/ACCESS.2026.3655813)
-
-- **Uncertainty Estimation in Cardio Landmark Detection and Heart Disease Diagnosis on Chest X-Ray Images** — IEEE Access, 2025. [DOI](https://doi.org/10.1109/ACCESS.2025.3566772)
-
-- **Automatic Calculation of Cardiometric Coefficients on Chest X-Ray Images** — IEEE Access, 2025. [DOI](https://doi.org/10.1109/ACCESS.2024.3524116)
-
-- **LogitGaze: Predicting Human Attention Using Semantic Information from Vision-Language Models** — ICLR 2025, Workshop on Reasoning and Planning for Large Language Models. [Paper](https://openreview.net/forum?id=Om4j6IVb42)
-
-- **Similar Scores, Different High-Risk Episodes: Auditing Model Selection in Longitudinal EHRs** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=RffArnWpec)
-
-- **Same Top Fraction, Different Workload: Auditing Eligibility and Capacity in Clinical Risk Evaluation** — NeurIPS 2026, Can We Trust AI Evaluation? workshop. [Paper](https://openreview.net/forum?id=puYbvC47rw)
-
-</details>
+If you work on related research, you can reach me at [d.lvov@innopolis.ru](mailto:d.lvov@innopolis.ru).
